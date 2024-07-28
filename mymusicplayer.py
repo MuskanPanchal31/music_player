@@ -2,17 +2,22 @@ from tkinter import *
 from PIL import ImageTk, Image
 import os
 from pygame import mixer
-co1 = "#ffffff"
-co2="#3C1DC6"
-co3="#333333"
-co4 ="#CEC4D1"
- 
+co1 = "#2b2b2b"  # Dark gray
+co2 = "#ffffff"  # White
+co3 = "#d3d3d3"  # Blue
+co4 = "#CEC4D1"  # Light gray
 window = Tk() 
 window.title("Music Player")
-window.geometry("352x255")
+window.geometry("400x300")
 window.configure(background=co1)
 window.resizable(width=FALSE, height=FALSE)
 
+
+
+
+
+
+# Create a scrollbar for the listbox
 
 def play_music():
     running  = listbox.get(ACTIVE)
@@ -136,7 +141,7 @@ running_song = Label(down_frame, text = "choose a song", font=("Ivy 10"),width=4
 running_song.place(x=0,y=1)
  
 
-os.chdir(r'C:\Users\muska\OneDrive\Desktop\PYTHON\musicplayer\New folder')
+os.chdir(r'C:\Users\muska\OneDrive\Desktop\python project\musicplayer\New folder')
 songs = os.listdir()
 
 def show():
