@@ -8,7 +8,7 @@ co3="#333333"
 co4 ="#CEC4D1"
  
 window = Tk() 
-window.title("")
+window.title("Music Player")
 window.geometry("352x255")
 window.configure(background=co1)
 window.resizable(width=FALSE, height=FALSE)
